@@ -33,7 +33,7 @@
         // Loop through the data and add markers to the group
         data.forEach(person => {
             var marker = L.marker([person.Latitude, person.Longitude])
-                .bindPopup(`<strong>Name:</strong> ${person.Name}<br><strong>Institution:</strong> ${person["Institution "]}<br><strong>Program:</strong> ${person.Program}`);
+                .bindPopup(`<strong>Name:</strong> ${person.Name}<br><strong>Institution:</strong> ${person["Institution "]}<br><strong>Program:</strong> ${person.Program}<br><strong>Email Address:</strong> ${person["Email Address"]}<br><strong>Year of Entry:</strong> ${person["Year of Entry"]}<br><strong>Number of offers:</strong> ${person["Number of offers"]}`);
             markers.addLayer(marker);
         });
 
